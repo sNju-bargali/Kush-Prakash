@@ -1,0 +1,183 @@
+html{
+    width: 100%;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+header,footer,main,section,article{
+    display: block;
+}
+
+header .main-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+
+}
+header .main-header .top-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    background: #dc214c;
+    width: 100%;
+    box-sizing: border-box;
+}
+header .main-header .top-header .left-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:  10px 15px;
+}
+header .main-header .top-header .left-section .logo img{
+    width: 200px;
+    
+}
+header .main-header .top-header .left-section .maha-img img{
+    width: 250px;
+    margin-left: 50px;
+}
+header .main-header .top-header .right-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 15px;
+    flex: 1;
+}
+header .main-header .top-header .right-section ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 50px;
+
+}
+header .main-header .top-header .right-section ul li{
+   padding: 0 15px;
+   color:#fff;
+   cursor: pointer;
+}
+header .main-header .top-header .right-section ul li:hover{
+    
+    color: green
+    }
+header .main-header .top-header .right-section .login-button{
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .main-header .top-header .right-section .login-button:hover{
+        
+    
+    background-color: red;
+    
+}
+header .main-header .top-header .right-section .login-button span{
+  color: black;
+  
+}
+header .main-header .bottom-header{
+    background-color: pink;
+    color: black;
+    padding: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.logo1
+{
+    text-align: center;
+    padding: 30px 15px;
+}
+.center-banner .content1{
+    
+}
+
+
+.main-section .content-img{
+    display: flex;
+    justify-content: center;
+}
+.main-section .content-img .left-banner{
+    padding: 0 15px;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+}
+.main-section .content-img .left-banner img{
+    width: 100%;
+}
+
+.main-section .content-img .center-banner{
+    flex: 2;
+}
+.main-section .content-img .center-banner .center-inner-banner{
+    display: flex;
+}
+.main-section .content-img .center-banner .center-inner-banner .content{
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: #eeeeee;
+    margin: 0 15px 15px 0;
+    padding: 10px;
+}
+.main-section .content-img .center-banner .center-inner-banner .content:last-child{
+margin-right: 0;
+}
+
+.main-section .content-img .center-banner .center-inner-banner img{
+    width: 100%;
+}
+
+.main-section .content-img .center-banner div{
+flex: 1;
+}
+
+.main-section .content-img .right-banner{
+    padding: 0 15px;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+}
+.main-section .content-img .right-banner img{
+    width: 100%;
+}
+
+.footer{
+    background: #ccc;
+    display: flex;
+    bottom: 0;
+    position: static;
+    bottom: 0;
+    padding: 10px 15px;
+}
+@media (max-width:768px){
+    header .main-header .top-header .left-section .logo img{
+        width: 100%;
+    }
+    header .main-header .top-header .left-section .maha-img img{
+        width: 100%;
+        margin-left: 20px;
+    }
+    header .main-header .top-header .right-section ul{
+        display: none;
+    }
+    header .main-header .top-header .left-section{
+        padding: 10px;
+    }
+    header .main-header .top-header .right-section{
+        padding: 10px;
+    }
+}
