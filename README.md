@@ -1,2 +1,0 @@
-# Kush-Prakash
-Kush-Prakash

@@ -1,6 +1,9 @@
 html{
     width: 100%;
 }
+*{
+    box-sizing: border-box;
+}
 body{
     width: 100%;
     margin: 0;
@@ -8,20 +11,38 @@ body{
     box-sizing: border-box;
     overflow-x: hidden;
 }
+main{
+    margin-top: 140px;
+    margin-bottom: 55px;
+}
+
 header,footer,main,section,article{
     display: block;
 }
 header .main-header{
-    display: flex;
+   display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
     padding: 0px;
+    position: fixed;
+    top: 0;
 
 }
-header .main-header .top-header{
+
+.advertisement-img{
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px;
+}
+.advertisement-img img{
+    width: 100%;
+}
+header .main-header .top-header{
+   display: flex;
     align-items: center;
     justify-content: flex-start;
     background-color: white;
@@ -47,8 +68,8 @@ header .main-header .top-header .left-section .maha-img{
 }
 
 header .main-header .top-header .left-section .maha-img img{
-    width: 250px;
-    margin-left: 50px;
+   width: 300px;
+    margin-left: 9px;
 }
 header .main-header .top-header .right-section {
     display: flex;
@@ -61,18 +82,20 @@ header .main-header .top-header .right-section ul.desktop-menu{
     list-style: none;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     margin-left: 50px;
+    
 
 }
 
 header .main-header .top-header .right-section ul.desktop-menu li{
-   padding: 0 15px;
+   padding: 0 10px;
    color:#fff;
    cursor: pointer;
+   font-size: 15px;
 }
 header .main-header .top-header .right-section ul.desktop-menu li:hover{
-    color: green
+    color: #000;
 }
 header .main-header .top-header .right-section .login-button{
     height: 60px;
@@ -82,18 +105,22 @@ header .main-header .top-header .right-section .login-button{
     display: flex;
     align-items: center;
     justify-content: center;
+        cursor: pointer;
 }
 
 header .main-header .top-header .right-section .login-button:hover{
-    background-color: red;
-    
+    background-color: #facc9a;
 }
+header .main-header .top-header .right-section .login-button:hover span{
+    color: #fff;
+}
+
 header .main-header .top-header .right-section .login-button span{
   color: black;
   
 }
 header .main-header .bottom-header{
-    background-color: pink;
+   background-color: #facc9a;
     color: black;
     padding: 4px;
     width: 100%;
@@ -126,25 +153,40 @@ header .main-header .bottom-header{
 
 .main-section .content-img .center-banner{
     flex: 2;
+    padding: 0 40px;
+
 }
 .main-section .content-img .center-banner .center-inner-banner{
     display: flex;
 }
+.main-section .content-img .center-banner .center-inner-banner .kush-banner{
+    padding: 20px;
+    box-sizing: border-box;
+}
 .main-section .content-img .center-banner .center-inner-banner .content{
-    border-radius: 5px;
-    border: 1px solid #000;
-    background: #eeeeee;
+       border-radius: 5px;
+    /* border: 1px solid #808080a6; */
+    /* background: #eeeeee; */
     margin: 0 15px 15px 0;
-    padding: 10px;
+    padding: 0px;
+    cursor: pointer;
+    
+
 }
 .main-section .content-img .center-banner .center-inner-banner .content:last-child{
 margin-right: 0;
 }
 
 .main-section .content-img .center-banner .center-inner-banner img{
-    width: 100%;
+    width: 93%;
 }
-
+.center-inner-banner .content{
+font-size: 46px;
+    text-align: center;
+    margin: auto;
+    padding-top: 65px;
+    flex:1;
+}
 .main-section .content-img .center-banner div{
 flex: 1;
 }
@@ -160,15 +202,12 @@ flex: 1;
 .main-section .content-img .right-banner img{
     width: 100%;
 }
-
-.footer{
-    background: #ccc;
-    display: flex;
-    bottom: 0;
-    position: static;
-    bottom: 0;
-    padding: 10px 15px;
+section .slider-img img {
+    text-align: center;
+    padding: 20px;
+    width: 90%;
 }
+
 
 /* Mobile Menu  */
 header .main-header .top-header .right-section .mobile-menu{
@@ -212,6 +251,57 @@ header .main-header .top-header .right-section .mobile-menu{
     padding: 0;
   }
   
+/*footer css*/
+.footer{
+       background: #dc214c;
+    display: flex;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}  
+.footer .footer2{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size:18px;
+}
+.footer .footer2 img{
+   width: 30px;
+  }
+  .footer .footer2 a{
+    margin: 0 10px;
+   }
+   
+  
+.footer .footer1 {
+   flex: 1;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer3{
+    flex: 1;
+    justify-content: flex-end;
+    display: flex;
+}
+.footer3 img {
+    width: 35px;
+}
+.footer .contact-no a {
+    text-decoration: none;
+    color: white;
+}
+.contact-no{
+    
+}
+
+
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -249,9 +339,83 @@ header .main-header .top-header .right-section .mobile-menu{
         width: 40px;
         font-size: 14px;
     }
- }
+    .footer{
+    padding: 8px 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    }
+
+    .footer .footer1 {
+        font-size:14px;
+        margin-bottom: 6px;
+    }
+    .footer .footer2 {
+        display:flex;
+            margin: auto;
+    }
+    .footer .footer2 img{
+        width:25px;
+        margin-right: 5px;
+    }
+    .footer .footer2 .contact-no {
+        padding: 0 5px;
+    }
+    .footer3{
+        top: 7px;
+        right: 8px;
+        position: absolute;
+            display: block;
+    }
+    .footer3 img {
+        width: 20px;
+        
+    }
+    .footer .footer2 .contact-no{
+        font-size: 14px;
+    }
+    .center-inner-banner .content {
+        font-size: 11px;
+        text-align: center;
+    }
+    .main-section {
+        margin-top: 96px;
+    }
+    .main-section .content-img .center-banner .center-inner-banner .kush-banner{
+            padding: 5px;
+    }
+    .main-section .content-img .center-banner .center-inner-banner a{
+        display:block;
+    }
+    .main-section .content-img .left-banner,.main-section .content-img .right-banner{
+        padding:0 10px;
+    }
+    .main-section .content-img .center-banner .center-inner-banner .content{
+        margin: 0 10px 10px 0;
+    }
+    .advertisement-img{
+        padding: 10px;
+    }
+    main{
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+    
+    .main-section .content-img .center-banner .center-inner-banner:nth-child(1){
+         display: block;
+    }
+    .main-section .content-img .center-banner{
+    flex: 2;
+    padding: 0;
+
+}
+ 
+
+}
  @media (max-width:400px){
     header .main-header .top-header .left-section .maha-img img{
         width: 120px;
     }
+    
 }

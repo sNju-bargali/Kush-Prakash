@@ -8,7 +8,40 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
   <script src="js/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 </head>
+
+<script>
+  $(document).ready(function () {
+    // $(".changeHoverImg_hover").mouseenter(function(){
+    //   $(".changeHoverImg").attr("src","img/ban3.png");
+    // }).mouseleave(function(){
+    //   $(".changeHoverImg").attr("src","img/ban2.png");
+    // });
+
+    var x = true;
+    setInterval(function () {
+      if (x) {
+        x = false;
+        $(".changeHoverImg_1").attr("src", "img/ban4.png");
+        $(".changeHoverImg_2").attr("src", "img/ban4.png");
+        $(".changeHoverImg_3").attr("src", "img/ban4.png");
+        $(".changeHoverImg_4").attr("src", "img/ban4.png");
+
+      } else {
+        x = true;
+        $(".changeHoverImg_1").attr("src", "img/ban1.png");
+        $(".changeHoverImg_2").attr("src", "img/ban1.png");
+        $(".changeHoverImg_3").attr("src", "img/ban1.png");
+        $(".changeHoverImg_4").attr("src", "img/ban1.png");
+      }
+    }, 3000);
+
+
+
+  });
+</script>
 
 <body>
   <header>
@@ -27,19 +60,31 @@
         </div>
         <div class="right-section">
           <ul class="desktop-menu">
-            <li>Home Page</li>
-            <li>Magazine</li>
-            <li>Marriage Bureau</li>
+            <li>E-Magazine</li>
+            <li>Marriage Beuro</li>
+            <li>News Portal</li>
+            <li>KP Channel</li>
+            <li>Phone Directory</li>
+            <li>प्रतिनिधि बने </li>
+            <li>हमारे सहयोगी </li>
           </ul>
           <div class="mobile-menu">
-              <div id="mySidenav" class="sidenav">
-                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                  <a href="#">About</a>
-                  <a href="#">Services</a>
-                  <a href="#">Clients</a>
-                  <a href="#">Contact</a>
-                </div>
-                <span style="font-size:30px;cursor:pointer;padding-right: 10px;color: #fff;" onclick="openNav()">&#9776;</span>
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="#">E-Magazine</a>
+              <a href="#">Marriage Beuro</a>
+
+              <a href="#">News Portal</a>
+              <a href="#">KP Channel</a>
+              <a href="#">Phone Directory</a>
+              <a href="">प्रतिनिधि बने </a>
+
+              <a href="">हमारे सहयोगी </a>
+
+              <a href="#">Biodata Upload</a>
+
+            </div>
+            <span style="font-size:30px;cursor:pointer;padding-right: 10px;color: #fff;" onclick="openNav()">&#9776;</span>
           </div>
           <div class="login-button">
             <span>login</span>
@@ -47,13 +92,11 @@
         </div>
       </div>
       <div class="bottom-header">
-        <marquee>fbwjeb</marquee>
+        <marquee>कुशवाहा: शाक्य, मौर्य, सैनी, माली (OBC) आदि शाखाओं की प्रतिनिधि पत्रिका...</marquee>
       </div>
     </div>
 
-    <div class="logo1">
-      <img src="img/logo1.png" alt="logos" width="50%">
-    </div>
+
 
 
   </header>
@@ -66,21 +109,30 @@
             <img src="img/ad1.jpg">
           </div>
           <div class="center-banner">
+
             <div class="center-inner-banner">
-              <div class="content">
-                <img src="img/Book.png">
-              </div>
-              <div class="content">
-                <img src="img/milan1.png">
-              </div>
+              <img class="kush-banner" src="img/logo1.png" alt="logos">
             </div>
             <div class="center-inner-banner">
-              <div class="content">
-                <img src="img/Book.png">
-              </div>
-              <div class="content">
-                <img src="img/milan1.png">
-              </div>
+              <a href="#" class="content changeHoverImg_hover">
+                <img src="img/ban2.png" class="changeHoverImg_1">
+
+              </a>
+
+              <a href="#" class="content">
+                <img src="img/ban3.png" class="changeHoverImg_2">
+
+              </a>
+            </div>
+            <div class="center-inner-banner">
+              <a href="#" class="content">
+                <img src="img/ban4.png" class="changeHoverImg_3">
+
+              </a>
+              <a href="#" class="content">
+                <img src="img/ban1.png" class="changeHoverImg_4">
+
+              </a>
             </div>
           </div>
 
@@ -92,22 +144,23 @@
       </div>
     </section>
     <section>
-      <div class="slider-img">
-        <img src="" alt="img">
+      <div class="advertisement-img">
+        <img src="img/ad.png" alt="img">
       </div>
     </section>
   </main>
   <footer>
     <div class="footer">
-      <div>
-        1
+      <!--<div class="footer1">
+        Helpline No: <span class="contact-no">9826369456</span>
+      </div>-->
+      <div class="footer2">
+        Helpline no <a href="https://wa.me/7000775019"><img src="img/what.png"/></a>
+          Visit us account: <span class="contact-no">10</span>
       </div>
-      <div>
-        2
-      </div>
-      <div>
-        3
-      </div>
+      <!-- <div class="footer3">
+        <img src="img/chat.ico">-->
+    </div>
     </div>
   </footer>
 
