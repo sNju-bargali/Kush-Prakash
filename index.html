@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>CSS Template</title>
+  <title>कुश प्रकाश</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
@@ -10,6 +10,17 @@
   <script src="js/script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <link rel="icon" href="img/icon.png" sizes="192x192" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!------ Include the above in your HEAD tag ---------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="http://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css">
+<link rel="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
+<link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <script>
@@ -24,20 +35,43 @@
     setInterval(function () {
       if (x) {
         x = false;
-        $(".changeHoverImg_1").attr("src", "img/ban4.png");
-        $(".changeHoverImg_2").attr("src", "img/ban4.png");
-        $(".changeHoverImg_3").attr("src", "img/ban4.png");
-        $(".changeHoverImg_4").attr("src", "img/ban4.png");
+        $(".changeHoverImg_1").attr("src", "img/ban2.png");
+        $(".changeHoverImg_2").attr("src", "img/ban7.png");
+        $(".changeHoverImg_3").attr("src", "img/ban6.png");
+        $(".changeHoverImg_4").attr("src", "img/ban1.png");
 
       } else {
         x = true;
-        $(".changeHoverImg_1").attr("src", "img/ban1.png");
-        $(".changeHoverImg_2").attr("src", "img/ban1.png");
-        $(".changeHoverImg_3").attr("src", "img/ban1.png");
-        $(".changeHoverImg_4").attr("src", "img/ban1.png");
+        $(".changeHoverImg_1").attr("src", "img/ban5.png");
+        $(".changeHoverImg_2").attr("src", "img/ban3.png");
+        $(".changeHoverImg_3").attr("src", "img/ban4.png");
+        $(".changeHoverImg_4").attr("src", "img/ban8.png");
       }
     }, 3000);
 
+    $('#customers-testimonials').owlCarousel( {
+        loop: true,
+        center: false,
+        items: 6,
+        margin: 20,
+        autoplay: true,
+        dots:true,
+        nav:true,
+        autoplayTimeout: 8500,
+        smartSpeed: 450,
+        navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+        responsive: {
+          0: {
+            items: 2
+          },
+          768: {
+            items: 2
+          },
+          1170: {
+            items: 6
+          }
+        }
+      });
 
 
   });
@@ -143,27 +177,99 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="advertisement-img">
-        <img src="img/ad.png" alt="img">
+ <!-- TESTIMONIALS -->
+<section class="testimonials">
+	<div class="container">
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="customers-testimonials" class="owl-carousel">
+
+            <!--TESTIMONIAL 1 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-responsive" src="https://image.freepik.com/free-photo/spaghetti-with-carbonara-sauce_1216-324.jpg" alt="">
+                <div class="item-details">
+									<h5>Chicken for two Roasted <span>$21</span></h5>
+									<p>There was a time when Chinese food in this country meant (Americanized) Cantonese food.</p>
+								</div>
+              </div>
+            </div>
+            <!--END OF TESTIMONIAL 1 -->
+            <!--TESTIMONIAL 2 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-responsive" src="https://image.freepik.com/free-photo/dishes-with-healthy-waffles_1220-367.jpg" alt="">
+                <div class="item-details">
+									<h5>Chicken for two Roasted <span>$21</span></h5>
+									<p>There was a time when Chinese food in this country meant (Americanized) Cantonese food.</p>
+								</div>
+              </div>
+            </div>
+            <!--END OF TESTIMONIAL 2 -->
+            <!--TESTIMONIAL 3 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-responsive" src="https://image.freepik.com/free-photo/top-view-of-tasty-noodles-with-prawns_1203-1769.jpg" alt="">
+                <div class="item-details">
+									<h5>Chicken for two Roasted <span>$21</span></h5>
+									<p>There was a time when Chinese food in this country meant (Americanized) Cantonese food.</p>
+								</div>
+              </div>
+            </div>
+            <!--END OF TESTIMONIAL 3 -->
+            <!--TESTIMONIAL 4 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-responsive" src="https://image.freepik.com/free-photo/burguer-with-garnish_1088-72.jpg" alt="">
+                <div class="item-details">
+									<h5>Chicken for two Roasted <span>$21</span></h5>
+									<p>There was a time when Chinese food in this country meant (Americanized) Cantonese food.</p>
+								</div>
+              </div>
+            </div>
+            <!--END OF TESTIMONIAL 4 -->
+            <!--TESTIMONIAL 5 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-responsive" src="https://image.freepik.com/free-photo/delicious-pastry-with-chicken_1203-1616.jpg" alt="">
+                <div class="item-details">
+									<h5>Chicken for two Roasted <span>$21</span></h5>
+									<p>There was a time when Chinese food in this country meant (Americanized) Cantonese food.</p>
+								</div>
+              </div>
+            </div>
+            <!--END OF TESTIMONIAL 5 -->
+          </div>
+        </div>
+      </div>
       </div>
     </section>
+    <!-- END OF TESTIMONIALS -->
+    
   </main>
   <footer>
     <div class="footer">
-      <!--<div class="footer1">
-        Helpline No: <span class="contact-no">9826369456</span>
-      </div>-->
-      <div class="footer2">
-        Helpline no <a href="https://wa.me/7000775019"><img src="img/what.png"/></a>
-          Visit us account: <span class="contact-no">10</span>
+      <div class="footer1">
+        Helpline no <a href="https://wa.me/7000775019"><img src="img/what.png" /></a>
       </div>
-      <!-- <div class="footer3">
-        <img src="img/chat.ico">-->
-    </div>
+      <div class="footer2">
+
+        Visit us account: <span class="contact-no">10</span>
+      </div>
+      <div class="footer3">
+        <img src="img/chat.ico">
+      </div>
     </div>
   </footer>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
 </body>
 
 </html>
