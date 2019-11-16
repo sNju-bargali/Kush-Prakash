@@ -1,0 +1,541 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>कुश प्रकाश</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/icon.png" sizes="192x192" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/jquery.steps.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-header">
+            <div class="top-header">
+                <div class="left-section">
+
+                    <div class="logo">
+                        <img src="../img/logo.png" alt="logos">
+                    </div>
+                    <div class="maha-img">
+                        <img src="../img/maha.png" alt="logos">
+                    </div>
+                </div>
+                <div class="right-section">
+                    <ul class="desktop-menu">
+                        <li>E-Magazine</li>
+                        <li>Marriage Beuro</li>
+                        <li>News Portal</li>
+                        <li>KP Channel</li>
+                        <li>Phone Directory</li>
+                        <li>प्रतिनिधि बने </li>
+                        <li>हमारे सहयोगी </li>
+                    </ul>
+                    <div class="mobile-menu">
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="#">E-Magazine</a>
+                            <a href="#">Marriage Beuro</a>
+                            <a href="#">News Portal</a>
+                            <a href="#">KP Channel</a>
+                            <a href="#">Phone Directory</a>
+                            <a href="">प्रतिनिधि बने </a>
+                            <a href="">हमारे सहयोगी </a>
+                            <a href="#">Biodata Upload</a>
+                        </div>
+                        <span style="font-size:30px;cursor:pointer;padding-right: 10px;color: #fff;" onclick="openNav()">&#9776;</span>
+                    </div>
+                    <div class="login-button">
+                        <span>login</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-header">
+                <marquee>कुशवाहा: शाक्य, मौर्य, सैनी, माली (OBC) आदि शाखाओं की प्रतिनिधि पत्रिका...</marquee>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="content">
+                <div id="wizard">
+                    <h2>First Step</h2>
+                    <section>
+                        <form>
+                            <div class="row">
+                                <div class="col-12 col-md-2">
+                                    <div class="man">
+                                        <img src="../img/img_boy.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-2">
+                                    <div class="avatar-upload">
+                                        <div class="avatar-preview">
+                                            <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+                                                <div class="avatar-edit">
+                                                    <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                                    <label for="imageUpload">
+                                                        <i class="fa fa-camera img-camera"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6" style="margin-bottom:5px;">
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round slider-register"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-md-6" style="margin-bottom:5px;">
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round slider-register"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="Cast" class="custom-select">
+                                                <option selected>Cast</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="category" class="custom-select">
+                                                <option selected>Category</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-12 form-mb">
+                                            <div class="form-inline">
+                                                <label for="name" class="mr-sm-2">Name</label>
+                                                <input type="text" class="form-control" id="name" style="flex:1;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 form-mb">
+                                            <div class="form-inline">
+                                                <label for="date" class="mr-sm-2">Date of birth</label>
+                                                <input type="date" class="form-control" id="date" style="flex:1;">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="colour" class="custom-select">
+                                                <option selected>Colour</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="height" class="custom-select">
+                                                <option selected>Height</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <div class="form-inline">
+                                                <label for="mobile" class="mr-sm-2">Mobile</label>
+                                                <input type="number" class="form-control" id="mobile" style="flex:1;">
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="applicant" class="custom-select">
+                                                <option selected>Applicant</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="state" class="custom-select">
+                                                <option selected>State</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="district" class="custom-select">
+                                                <option selected>District</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-12 form-mb">
+                                            <div class="form-inline">
+                                                <label for="email" class="mr-sm-2">Email</label>
+                                                <input type="email" class="form-control" id="email" style="flex:1;">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="col-12 col-md-2">
+                                    <div class="women">
+                                        <img src="../img/img_girl.jpg">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                    <h2>Second Step</h2>
+                    <section>
+                        <form>
+                            <div class="row">
+                                <div class="col-12 col-md-2">
+                                    <div class="man">
+                                        <img src="../img/img_boy.jpg">
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12 col-md-2">
+                                    <div class="avatar-upload">
+                                        <div class="avatar-preview">
+                                            <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+                                                <div class="avatar-edit">
+                                                    <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                                    <label for="imageUpload">
+                                                        <i class="fa fa-camera img-camera"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="Cast" class="custom-select">
+                                                <option selected>Cast</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="category" class="custom-select">
+                                                <option selected>Category</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-12 form-mb">
+                                            <div class="form-inline">
+                                                <label for="name" class="mr-sm-2">Name</label>
+                                                <input type="text" class="form-control" id="name" style="flex:1;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 form-mb">
+                                            <div class="form-inline">
+                                                <label for="date" class="mr-sm-2">Date of birth</label>
+                                                <input type="date" class="form-control" id="date" style="flex:1;">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="colour" class="custom-select">
+                                                <option selected>Colour</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="height" class="custom-select">
+                                                <option selected>Height</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <div class="form-inline">
+                                                <label for="mobile" class="mr-sm-2">Mobile</label>
+                                                <input type="number" class="form-control" id="mobile" style="flex:1;">
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="applicant" class="custom-select">
+                                                <option selected>Applicant</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="state" class="custom-select">
+                                                <option selected>State</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="district" class="custom-select">
+                                                <option selected>District</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-12 form-mb">
+                                            <div class="form-inline">
+                                                <label for="email" class="mr-sm-2">Email</label>
+                                                <input type="email" class="form-control" id="email" style="flex:1;">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="col-12 col-md-2">
+                                    <div class="women">
+                                        <img src="../img/img_girl.jpg">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+
+                    <h2>Third Step</h2>
+                    <section>
+                        <form>
+                            <div class="row">
+                                <div class="col-12 col-md-2">
+                                    <div class="man">
+                                        <img src="../img/img_boy.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-2">
+                                    <div class="avatar-upload">
+                                        <div class="avatar-preview">
+                                            <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+                                                <div class="avatar-edit">
+                                                    <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                                    <label for="imageUpload">
+                                                        <i class="fa fa-camera img-camera"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="Cast" class="custom-select">
+                                                <option selected>Cast</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="category" class="custom-select">
+                                                <option selected>Category</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 form-mb">
+                                            <div class="form-inline">
+                                                <label for="name" class="mr-sm-2">Name</label>
+                                                <input type="text" class="form-control" id="name" style="flex:1;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 form-mb">
+                                            <div class="form-inline">
+                                                <label for="date" class="mr-sm-2">Date of birth</label>
+                                                <input type="date" class="form-control" id="date" style="flex:1;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="colour" class="custom-select">
+                                                <option selected>Colour</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="height" class="custom-select">
+                                                <option selected>Height</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <div class="form-inline">
+                                                <label for="mobile" class="mr-sm-2">Mobile</label>
+                                                <input type="number" class="form-control" id="mobile" style="flex:1;">
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="applicant" class="custom-select">
+                                                <option selected>Applicant</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="state" class="custom-select">
+                                                <option selected>State</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-12 col-md-6 form-mb">
+                                            <select name="district" class="custom-select">
+                                                <option selected>District</option>
+                                                <option value="volvo">Volvo</option>
+                                                <option value="fiat">Fiat</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-12 form-mb">
+                                            <div class="form-inline">
+                                                <label for="email" class="mr-sm-2">Email</label>
+                                                <input type="email" class="form-control" id="email" style="flex:1;">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="col-12 col-md-2">
+                                    <div class="women">
+                                        <img src="../img/img_girl.jpg">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Footer start-->
+    <footer>
+        <div class="footer">
+            <div class="footer1">
+                Helpline no <a href="https://wa.me/7000775019"><img src="../img/what.png" /></a>
+            </div>
+            <div class="footer2">
+
+                Visit us account: <span class="contact-no">10</span>
+            </div>
+            <div class="footer3">
+                <img src="../img/chat.ico">
+            </div>
+        </div>
+    </footer>
+    <!--Footer end-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="../js/modernizr-2.6.2.min.js"></script>
+    <script src="../js/jquery.steps.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            /*Image upload*/
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                        $('#imagePreview').hide();
+                        $('#imagePreview').fadeIn(650);
+                    }
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+            $("#imageUpload").change(function () {
+                readURL(this);
+            });
+            /*Image upload*/
+            /*wizard steps*/
+            $("#wizard").steps({
+                headerTag: "h2",
+                bodyTag: "section",
+                transitionEffect: "slideLeft"
+            });
+            /*wizard steps*/
+        });
+    </script>
+</body>
+
+</html>
