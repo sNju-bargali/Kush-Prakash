@@ -220,6 +220,20 @@ font-size: 46px;
 .main-section .content-img .center-banner div{
 flex: 1;
 }
+.selectcheck-img {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 15px 0;
+}
+.custom-control.custom-checkbox.check {
+    position: relative;
+    display: block;
+   right: 30px;
+    top: -10px;
+}
 
 .main-section .content-img .right-banner{
     padding: 0 15px;
